@@ -6,6 +6,7 @@ from mongoengine import connect
 from models import Item
 import os
 
+# Boilerplate setup of the credentials
 load_dotenv()
 MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
 SECRET_KEY = os.getenv('SECRET_KEY')
